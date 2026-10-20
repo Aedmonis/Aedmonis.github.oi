@@ -1,0 +1,232 @@
+
+/*
+====================================================
+ PROYECTO: MI REGISTRO ESTUDIANTIL
+ Autor: Adonis Mauricio Guzmán Henríquez
+ Institución: INCOA
+ Grado: 1TB Software - Código 13
+ Año: 2026
+
+ Derechos de autor:
+ Proyecto desarrollado con fines educativos.
+====================================================
+*/
+
+/* Configuración general de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:
+        radial-gradient(circle at top, #26305d, transparent 45%),
+        linear-gradient(135deg, #090d1c, #17132e, #0b1830);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    padding: 35px 15px 25px;
+}
+
+.logo {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.encabezado h1 {
+    font-size: 27px;
+    letter-spacing: 2px;
+    color: #b6a5ff;
+}
+
+.encabezado p {
+    color: #d0d4e8;
+    margin-top: 9px;
+    font-size: 15px;
+}
+
+.encabezado span {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #9ba6d3;
+    letter-spacing: 1px;
+}
+
+/* Centrar el formulario */
+.contenedor {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Tarjeta principal */
+.tarjeta {
+    width: 100%;
+    max-width: 540px;
+    background: #171d35;
+    border: 1px solid #45436d;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 45px #00000070;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+}
+
+/* Insignia decorativa */
+.insignia {
+    display: table;
+    margin: 0 auto 17px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #302d59;
+    color: #c5baff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tarjeta h2 {
+    color: #c0b3ff;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #b9c0d9;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Grupos de campos */
+.grupo {
+    margin-bottom: 17px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e2e5ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Entradas y listas */
+input, select {
+    width: 100%;
+    padding: 13px 14px;
+    background: #0e1428;
+    color: #ffffff;
+    border: 1px solid #454b70;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: #8992b1;
+}
+
+input:focus, select:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 3px #a78bfa25;
+}
+
+/* Botón de registro */
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 15px;
+    background: linear-gradient(90deg, #6552d9, #3288e7);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 22px #7665e866;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Mensaje de error */
+#error {
+    color: #ffaaaa;
+}
+
+#mensaje {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Resultado */
+.resultado {
+    display: none;
+    margin-top: 18px;
+    padding: 20px;
+    background: #12372f;
+    border: 1px solid #39b987;
+    border-radius: 12px;
+    line-height: 2;
+    overflow-wrap: anywhere;
+}
+
+.resultado h3 {
+    color: #79f0b4;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.resultado p {
+    color: #e4fff0;
+    font-size: 14px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    color: #929bb8;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 550px) {
+    .encabezado h1 {
+        font-size: 21px;
+    }
+
+    .tarjeta {
+        padding: 22px;
+    }
+}

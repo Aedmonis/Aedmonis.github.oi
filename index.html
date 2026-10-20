@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Registro Estudiantil</title>
+
+    <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado principal -->
+    <header class="encabezado">
+        <div class="logo">🎓</div>
+        <h1>MI REGISTRO ESTUDIANTIL</h1>
+        <p>Plataforma de información académica</p>
+        <span>INCOA | Año escolar 2026</span>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenedor">
+
+        <section class="tarjeta">
+
+            <div class="insignia">📋 FORMULARIO ACADÉMICO</div>
+
+            <h2>Registro de estudiante</h2>
+
+            <p class="descripcion">
+                Ingresa tus datos personales y académicos
+                para completar el registro.
+            </p>
+
+            <!-- Formulario principal -->
+            <form id="formulario">
+
+                <div class="grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ej. Adonis Mauricio Guzmán"
+                        required
+                    >
+                </div>
+
+                <div class="grupo">
+                    <label for="nie">NIE</label>
+                    <input
+                        type="text"
+                        id="nie"
+                        placeholder="Ingresa tu NIE"
+                        required
+                    >
+                </div>
+
+                <div class="grupo">
+                    <label for="edad">Edad</label>
+                    <input
+                        type="number"
+                        id="edad"
+                        placeholder="Ej. 16"
+                        min="1"
+                        required
+                    >
+                </div>
+
+                <div class="grupo">
+                    <label for="grado">Grado</label>
+                    <select id="grado" required>
+                        <option value="">Seleccionar grado ▼</option>
+                        <option value="1.º Bachillerato Técnico">
+                            1.º Bachillerato Técnico
+                        </option>
+                        <option value="2.º Bachillerato Técnico">
+                            2.º Bachillerato Técnico
+                        </option>
+                        <option value="3.º Bachillerato Técnico">
+                            3.º Bachillerato Técnico
+                        </option>
+                        <option value="1.º Bachillerato General">
+                            1.º Bachillerato General
+                        </option>
+                        <option value="2.º Bachillerato General">
+                            2.º Bachillerato General
+                        </option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label for="seccion">Sección</label>
+                    <select id="seccion" required>
+                        <option value="">Seleccionar sección ▼</option>
+                        <option value="A">Sección A</option>
+                        <option value="B">Sección B</option>
+                        <option value="C">Sección C</option>
+                        <option value="D">Sección D</option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+                </div>
+
+                <div class="grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="text"
+                        id="telefono"
+                        placeholder="Ej. 7000-0000"
+                        required
+                    >
+                </div>
+
+                <!-- Botón para enviar los datos -->
+                <button type="submit">
+                    ✚ REGISTRAR ESTUDIANTE
+                </button>
+
+            </form>
+
+            <!-- Mensajes y datos registrados -->
+            <div id="mensaje" aria-live="polite"></div>
+            <div id="resultado" class="resultado"></div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Adonis Mauricio Guzmán Henríquez</p>
+        <p>1TB Software | Código 13</p>
+        <p>Proyecto educativo de programación web</p>
+    </footer>
+
+    <!-- Conexión con JavaScript -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
